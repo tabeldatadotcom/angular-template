@@ -1,5 +1,5 @@
 export enum routes {
-  HOME = '/',
+  HOME = '/home',
   DASHBOARD = '/dashboard',
   TYPOGRAPHY = '/typography',
   TABLES = '/tables',

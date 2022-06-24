@@ -5,27 +5,14 @@ import {AuthGuard} from './pages/auth/guards';
 
 const routes: Routes = [
   {
-    path: 'typography',
-    pathMatch: 'full',
-    canActivate: [AuthGuard],
-    loadChildren: () => import('./pages/typography/typography.module').then(m => m.TypographyModule)
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
   },
   {
-    path: 'tables',
-    pathMatch: 'full',
+    path: 'home',
     canActivate: [AuthGuard],
-    loadChildren: () => import('./pages/tables/tables.module').then(m => m.TablesModule)
-  },
-  {
-    path: 'notification',
-    pathMatch: 'full',
-    canActivate: [AuthGuard],
-    loadChildren: () => import('./pages/notification/notification.module').then(m => m.NotificationModule)
-  },
-  {
-    path: 'ui',
-    canActivate: [AuthGuard],
-    loadChildren: () => import('./pages/ui-elements/ui-elements.module').then(m => m.UiElementsModule)
+    loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)
   },
   {
     path: '404',

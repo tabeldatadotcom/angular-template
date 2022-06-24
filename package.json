@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration production",
+    "dummy": "ng serve --proxy-config proxy.dumy.conf.json",
+    "build": "ng build --configuration production --aot --build-optimizer --common-chunk --vendor-chunk --optimization --progress",
     "lint": "ng lint",
     "hmr": "ng serve --configuration hmr"
   },

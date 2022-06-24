@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { routes } from '../../consts/routes';
+import {Component} from '@angular/core';
+import {routes} from '../../consts';
 
 @Component({
   selector: 'app-sidebar',
