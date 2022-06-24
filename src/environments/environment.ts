@@ -4,7 +4,11 @@
 
 export const environment = {
   production: false,
-  hmr: false
+  hmr: false,
+  clientId: 'oauth2-resource',
+  clientSecret: '123456',
+  uriApi: '/api-server',
+  uriAuth: '/auth-server'
 };
 
 /*
