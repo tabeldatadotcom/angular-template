@@ -11,6 +11,8 @@ import {SharedModule} from './shared/shared.module';
 import {AppRoutingModule} from './app-routing.module';
 import {NotFoundComponent} from './pages/not-found/not-found.component';
 import {AuthModule} from './pages/auth/auth.module';
+import { HomeModule } from './pages/home/home.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import {AuthModule} from './pages/auth/auth.module';
     AppRoutingModule,
     ToastrModule.forRoot(),
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    HomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
