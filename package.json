@@ -3,7 +3,7 @@
   "version": "1.0.6",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --proxy-config src/proxy.config.json",
     "dummy": "ng serve --proxy-config proxy.dumy.conf.json",
     "build": "ng build --configuration production --aot --build-optimizer --common-chunk --vendor-chunk --optimization --progress",
     "lint": "ng lint",
